@@ -20,8 +20,21 @@ require_once("config.php");
 // $usuario1->login("Davyson", "1234567890");
 // echo $usuario1;
 
+/*
+Criando um novo usuário
+*/
 // $usuario2 = new Usuario();
 // $usuario2->login("Rakel Lopes", "12345");
 // echo $usuario2;
+
+// $aluno = new Usuario("AlunoTeste", "alunosenhateste");
+// $aluno->insert();
+// echo $aluno;
+
+$usuario = new Usuario();
+$usuario->loadById(12);
+$usuario->update("UpdateDAO", "UpdatePDO");
+echo $usuario;
+
 
 ?>

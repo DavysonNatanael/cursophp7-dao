@@ -31,9 +31,20 @@ Criando um novo usuário
 // $aluno->insert();
 // echo $aluno;
 
+/*
+Update de um usuário
+*/
+// $usuario = new Usuario();
+// $usuario->loadById(12);
+// $usuario->update("UpdateDAO", "UpdatePDO");
+// echo $usuario;
+
+/*
+Deletando um usuário
+*/
 $usuario = new Usuario();
-$usuario->loadById(12);
-$usuario->update("UpdateDAO", "UpdatePDO");
+$usuario->loadById(11);
+$usuario->delete();
 echo $usuario;
 
 
